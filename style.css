@@ -1,0 +1,91 @@
+/* fixing colors*/ 
+
+body{
+    background-color: #c2d6c5;
+}
+
+.navbar-custom {
+    background-color: #3e4f44;
+    color:#ffffff;
+}
+
+.navbar-custom > .container-fluid > ul {
+    background-color: #3e4f44;
+    color:#000000;
+}
+.navbar-custom a {
+    color:#ffffff;
+}
+.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus{
+    background-color:#5e8d66;
+}
+
+
+
+/*make the item bigger when you hover*/
+.product:hover{
+  transform: scale(1.1,1.1);
+}
+/*removing bottom margin so it connects*/
+.jumbotron {
+    margin-bottom: 0;
+    background-color:#eedbbe;
+    color: #3e4f44;
+}
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+
+/*adding some padding*/
+
+footer {
+    background-color: #9f684b;
+    padding: 25px;
+    color:#ffffff;
+}
+    
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;} 
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+    
+/* Set background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #c2d6c5;
+    height: 100%;
+}
+
+/*to make text centered vertically*/
+.centerV {
+    /*padding: 250px 0;*/
+    vertical-align:middle;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 25px;
+}
+
+/*to center pictures*/
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:75%;
+    padding: 25px;
+}
+
+h2{
+    font-weight:300;
+}
+
+h3{
+    text-align:center;
+}

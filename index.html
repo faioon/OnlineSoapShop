@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <!-- Bootstrap CSS & jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src='script.js' type="text/javascript"></script>
+        
+    <!-- Personal CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+        
+    <title>Soap Shop</title>
+
+</head>
+
+<body> 
+    
+    <!-- jumbotron -->
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Green Hands</h1>      
+            <p>An Environmentally Freindly, Sustainable, Soap Shop</p>
+        </div>
+    </div>
+    
+    <!--navbar-->
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand" href="#">GreenHands</p>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cart
+                    <span class="caret"></span></a>
+                    
+                    <ul class="dropdown-menu">
+                        <button id="empty">Empty Cart</button>
+                        <div id="cart">
+                            
+                        </div>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Country
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><input  type="radio" name="country" id="country1" ><label>USA</label></li>
+                        <li><input  type="radio" name="country" id="country2" ><label>Kuwait</label></li>
+                        <li><input  type="radio" name="country" id="country3" ><label>Jordan</label></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- fist row of products -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-info">
+                    <div class="panel-heading">CLASSIC SOAP</div>
+                    <div class="panel-body" style="min-height: 350; max-height: 350;"><img class="product" id="soap1" src="https://codehs.com/uploads/999d2cf27c18049812e67d7401b58e3f" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        <p>Our classic soap is a sustainable olive based bar soap that does not include any fragrences or sulfates</p>
+                        <p id="price1">price: 7.50JOD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">DISCOUNT SOAP</div>
+                    <div class="panel-body showcase"><img class="product" id="soap2"src="https://codehs.com/uploads/7aa9a3480518c2087aea67da3464158e" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        <p>Our discount soap is a cheaper way to help the enviorment</p>
+                        <p>We make our discount soap using the excess soap of our other soaps that don't fit the mold</p>
+                        <p>This is done before the scenting process to avoid any mixture of essential oils</p>
+                        <p>We put this all into a block mold to give you your soap</p>
+                        <p id="price2">price: 6.00JOD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">LIMITED EDITION SOAP</div>
+                    <div class="panel-body"><img class="product" width="75" id="soap3" src="https://codehs.com/uploads/0d6fbe18d65c5d6717bf0d3b2076f585" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        <p>Our limited edition soap is also olive oil based and has natural exfoliating ingredients like himalayan pink salt and poppy seeds</p>
+                        <p>Exfoliation helps renew dried skin</p>
+                        <p id="price3">price: 11.00JOD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">    
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-info">
+                    <div class="panel-heading">PINK SOAP</div>
+                    <div class="panel-body"><img class="product" id="soap4" src="https://codehs.com/uploads/595cabb056c128a888b177b238c390df" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        <p>This soap is the same as our classic soap but with a special essential oil</p>
+                        <p>Our pink soap has drops of Clary Sage Essential Oil for earthy, fruity, and sweet notes</p>
+                        <p id="price4">price: 8.50JOD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4"> 
+                <div class="panel panel-info">
+                    <div class="panel-heading">BEIGE SOAP</div>
+                    <div class="panel-body"><img class="product" id="soap5" src="https://codehs.com/uploads/3853af176435b3b6130f51bb8d4e01dc" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        <p>Our beige soap has drops of Cedarwood Essential Oil to add a wonderfully dry and woodsy base note to the soap</p>
+                        <p id="price5">price: 8.50JOD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4"> 
+                <div class="panel panel-info">
+                    <div class="panel-heading">BROWN SOAP</div>
+                    <div class="panel-body"><img class="product" id="soap6" src="https://codehs.com/uploads/a32fbd92bc876dd7218c016efcae253d" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">
+                        <p>Our brown soap has drops of Dark Patchouli Essential Oil for a a warm, earthy, musky, and somewhat sweet aroma</p>
+                        <p id="price6">price: 8.50JOD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+
+    <footer>
+        <div class="container text-center">
+            <p><i>&copy; Copyrights GreenHands.com All rights reserved.</i></p>
+        </div>
+    </footer>
+    
+</body>
